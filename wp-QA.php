@@ -15,8 +15,6 @@
 
 ?>
 
-
-
 <?php
   date_default_timezone_set('America/Vancouver');
 
@@ -72,12 +70,12 @@
         'name' => 'general_parts',
         'items' => array(
           'Favicon in place',
-          '<a href="https://codex.wordpress.org/Meta_Tags_in_WordPress" target="_blank">Proper titles and meta tags in place</a>',
+          //'<a href="https://codex.wordpress.org/Meta_Tags_in_WordPress" target="_blank">Proper titles and meta tags in place</a>',
           'Images are optimized',
           'Images are being output with alt tags',
           'If site has search box, <a href="https://codex.wordpress.org/Creating_a_Search_Page" target="_blank">templates</a> for search results and no results.',
           'Custom 404 page',
-          '<a href="https://www.smashingmagazine.com/2009/04/15-essential-checks-before-launching-your-website/#sitemap" target="_blank">XML Sitemap</a>',
+          //'<a href="https://www.smashingmagazine.com/2009/04/15-essential-checks-before-launching-your-website/#sitemap" target="_blank">XML Sitemap</a>',
           'Link to privacy policy if data is being collected',
           'Test contact forms',
           'Test search functionality',
@@ -90,12 +88,22 @@
         )
       ),
       array(
+        'label' => 'Plugins',
+        'name' => 'plugins',
+        'items' => array(
+          'iThemes Security',
+          'Yoast SEO',
+          'UpdraftPlus'
+        )
+      ),
+      array(
         'label' => 'Right Before Launch',
         'name' => 'before_launch',
         'items' => array(
           'Swap out site emails and contact form emails for client\'s email',
-          'Add analyitics tracking code',
+          'Add analytics tracking code',
           'Check that hosting plan has php version of at least 5.6, preferably 7.7',
+          'Uncheck "Discourage Search Engines"',
         )
       )
     );
